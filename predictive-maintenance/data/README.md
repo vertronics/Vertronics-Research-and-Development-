@@ -37,6 +37,16 @@ Please cite the original dataset when using it in research and comply with its C
 
 The dataset's licence applies to the dataset itself. It does not automatically determine the licence for this repository's research paper or notebook.
 
-## Distribution
+## Distribution and Local Setup
 
-The raw dataset is not included in this directory. Readers should obtain it from the original UCI source.
+The raw dataset is not included in this repository. Obtain it from the original UCI source.
+
+For the analysis notebook to locate the dataset, place the downloaded CSV file in this directory using the filename:
+
+`ai4i2020.csv`
+
+Expected path relative to the repository root:
+
+`predictive-maintenance/data/ai4i2020.csv`
+
+Ensure the file's columns match the original AI4I 2020 dataset. The dataset remains subject to its stated **CC BY 4.0** licence. Provide appropriate attribution and identify any changes made to the dataset.
