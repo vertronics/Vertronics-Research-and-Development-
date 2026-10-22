@@ -1,4 +1,3 @@
-
 # Dataset Documentation
 
 ## Dataset Used
@@ -7,10 +6,12 @@
 
 - **Source:** UCI Machine Learning Repository
 - **Dataset page:** https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
+- **DOI:** https://doi.org/10.24432/C5HS5C
+- **Dataset licence:** Creative Commons Attribution 4.0 International (CC BY 4.0), as specified by the UCI dataset record.
 
 ## Purpose
 
-This dataset contains equipment operating measurements and failure-related information for research into predictive maintenance and industrial machine learning.
+This dataset contains equipment operating measurements and failure-related information for research into predictive maintenance and industrial machine learning. It is a synthetic dataset designed to represent predictive maintenance scenarios.
 
 ## Dataset Structure
 
@@ -30,6 +31,12 @@ Product type is excluded from the primary clustering features to reduce the risk
 
 ## Data Access and Attribution
 
-Obtain the dataset from the UCI Machine Learning Repository using the link above. Review the dataset's current terms and citation guidance before redistribution or reuse.
+Obtain the dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset).
 
-The raw dataset is not included in this directory.
+Please cite the original dataset when using it in research and comply with its CC BY 4.0 licence, including appropriate attribution and identification of any changes made to the dataset.
+
+The dataset's licence applies to the dataset itself. It does not automatically determine the licence for this repository's research paper or notebook.
+
+## Distribution
+
+The raw dataset is not included in this directory. Readers should obtain it from the original UCI source.
