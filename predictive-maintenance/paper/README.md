@@ -1,6 +1,6 @@
 # Research Paper
 
-This directory contains the published research report for the Vertex Electronics predictive maintenance study.
+This directory contains the research report for the Vertex Electronics predictive maintenance study.
 
 ## Research Title
 
@@ -8,27 +8,35 @@ This directory contains the published research report for the Vertex Electronics
 
 ## Published Document
 
-The final research report will be provided in PDF format.
-
+- **File:** [`Vertex_Electronics_Predictive_Maintenance_Analysis.pdf`](Vertex_Electronics_Predictive_Maintenance_Analysis.pdf)
 - **Format:** PDF
-- **Research approach:** Unsupervised machine learning using K-Means clustering
+- **Method:** Unsupervised machine learning using K-Means clustering
 - **Dataset:** AI4I 2020 Predictive Maintenance Dataset
-- **Purpose:** To investigate operating-condition patterns and their association with machine failures.
+- **Purpose:** To investigate operating-condition patterns and their association with recorded machine failures.
+
+## Supporting Research Materials
+
+- [Analysis notebook](../notebooks/predictive_maintenance_clustering.ipynb)
+- [Research figures](../figures/)
+- [Quantitative results](../results/)
+- [Dataset information and attribution](../data/README.md)
 
 ## Reproducibility
 
-The accompanying Jupyter Notebook is available in the [`notebooks`](../notebooks/) directory. It contains the computational analysis, clustering procedure, evaluation metrics, and results needed to examine the study.
+The notebook contains the computational analysis supporting the study. The dataset must be obtained separately, as described in the data README.
 
 The LaTeX source used to prepare the report is retained privately by the author and is not distributed in this repository.
 
-## Licensing and Attribution
+## Licence and Attribution
 
-The research report is intended to be shared under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** license, subject to the license notice accompanying the published PDF.
+The report is intended to be shared under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** licence, subject to the licence notice included with the published PDF.
 
-You may share the unmodified report for non-commercial purposes with appropriate attribution. You may not distribute modified versions of the report under this license. Third-party datasets, code, and other materials remain subject to their respective licenses.
+Under this licence, the unmodified report may be shared for non-commercial purposes with appropriate attribution. Modified versions may not be distributed under this licence.
 
-**License details:** https://creativecommons.org/licenses/by-nc-nd/4.0/
+Third-party datasets, code, and other materials remain subject to their respective licences.
 
-## Research Organization
+**Licence details:** https://creativecommons.org/licenses/by-nc-nd/4.0/
 
-This study is part of the research and development activities of **Vertex Electronics**.
+## Research Organisation
+
+This study forms part of the research and development activities of **Vertex Electronics**.
