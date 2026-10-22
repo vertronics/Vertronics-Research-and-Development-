@@ -1,0 +1,4 @@
+cluster,records,failures,observed_failure_rate_percent
+Cluster 0,3930,206,5.24
+Cluster 1,4017,87,2.17
+Cluster 2,2053,46,2.24
