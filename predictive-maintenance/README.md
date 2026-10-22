@@ -1,23 +1,19 @@
-# Predictive Maintenance Research
+# Predictive Maintenance Through Unsupervised Clustering
 
-## Overview
+This research project by **Vertex Electronics** investigates operating-condition patterns in the AI4I 2020 Predictive Maintenance Dataset using K-Means clustering.
 
-This project investigates the use of unsupervised machine learning to identify operating-condition patterns in the AI4I 2020 Predictive Maintenance Dataset.
-
-The study applies K-Means clustering to machine operating data, evaluates cluster quality, and examines associations between discovered clusters and recorded machine failures.
+The study examines whether groups of operating conditions identified through unsupervised learning are associated with differences in recorded machine-failure rates.
 
 ## Research Objectives
 
-- Apply K-Means clustering to continuous equipment operating variables.
-- Evaluate clustering quality using statistical metrics.
-- Examine associations between cluster membership and recorded failure labels without using those labels as clustering inputs.
-- Assess practical applications, limitations, and opportunities for further research.
+- Identify operating-condition groups using K-Means clustering.
+- Evaluate clustering quality across different numbers of clusters.
+- Compare operating characteristics and recorded failure rates across the resulting clusters.
+- Discuss the findings, limitations, and potential relevance to predictive maintenance research.
 
 ## Methodology
 
-The analysis includes data inspection, feature preparation, standardization, K-Means clustering, cluster evaluation, and post-hoc statistical analysis of failure patterns.
-
-The primary clustering analysis uses five continuous operating-condition variables:
+The primary clustering analysis uses five continuous variables:
 
 - Air temperature
 - Process temperature
@@ -25,56 +21,42 @@ The primary clustering analysis uses five continuous operating-condition variabl
 - Torque
 - Tool wear
 
-Product type is excluded from the primary clustering features to reduce the risk of clusters simply reflecting product categories. Failure labels are used for post-hoc analysis, not as clustering inputs.
+Product type is excluded from the primary clustering features. Recorded failure labels are used after clustering to examine associations between cluster membership and machine failures.
 
 ## Key Findings
 
-- The selected three-cluster solution showed modest separation between operating-condition groups.
-- Cluster assignments were highly stable across the tested random seeds under the same preprocessing procedure.
-- Failure rates differed across clusters, with a statistically significant association between cluster membership and recorded failures.
-- The observed association had a small effect size and does not establish causation or demonstrate a validated predictive-maintenance system.
-- Cluster assignments were sensitive to feature scaling, supporting the use of standardized features for the primary analysis.
-
-Refer to the research report and notebook for detailed metrics, visualizations, and limitations.
+- The three-cluster solution provides a useful segmentation of the operating-condition data among the tested cluster counts.
+- The clusters differ in their operating profiles and observed failure rates.
+- The observed associations do not establish causation.
+- The analysis is exploratory and does not demonstrate a validated industrial predictive-maintenance system.
+- Clustering outcomes can be sensitive to feature scaling and analytical choices.
 
 ## Research Materials
 
-- **[Research Report (PDF)](paper/Vertex_Electronics_Predictive_Maintenance_Analysis.pdf)** — published technical report.
-- **[Research Notebook](notebooks/predictive_maintenance_clustering.ipynb)** — computational analysis, clustering procedure, evaluation metrics, and results.
-- **[Notebook Documentation](notebooks/README.md)** — information about the research notebook.
-- **[Dataset Documentation](data/README.md)** — dataset source, structure, attribution, and licensing.
-- **[Research Results](results/README.md)** — documentation for quantitative outputs.
-- **[Research Figures](figures/README.md)** — documentation for visualizations.
-
-## Dataset
-
-The study uses the [AI4I 2020 Predictive Maintenance Dataset](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) from the UCI Machine Learning Repository.
-
-The dataset is synthetic and contains 10,000 records and 14 columns. The raw dataset is not included in this repository. See the dataset documentation for access and attribution guidance.
+| Resource | Description |
+|---|---|
+| [Research report](paper/Vertex_Electronics_Predictive_Maintenance_Analysis.pdf) | PDF report presenting the study |
+| [Analysis notebook](notebooks/predictive_maintenance_clustering.ipynb) | Computational workflow and clustering analysis |
+| [Research figures](figures/) | Visualizations generated for the study |
+| [Quantitative results](results/) | CSV files containing evaluation metrics and cluster comparisons |
+| [Dataset information](data/README.md) | Dataset source, access instructions, and attribution |
 
 ## Reproducibility
 
-The research notebook documents the computational analysis. To reproduce the study, obtain the dataset from its original source, place it at the location expected by the notebook, install the required Python libraries, and execute the notebook.
+The analysis notebook and accompanying CSV files and figures provide the main research materials. The dataset is not included in this repository and must be obtained separately. Consult the [data README](data/README.md) for its source and attribution information.
 
-The numerical results and figures should be checked against the notebook before being published as separate files.
+When reproducing the analysis, use the dataset filename and location expected by the notebook and install the required Python dependencies.
 
-## Scope and Limitations
+## Limitations
 
-This is an exploratory study using synthetic data. The clustering results identify operating-condition groupings and associations with recorded failures; they do not independently establish predictive accuracy, causal relationships, or real-world industrial performance.
+The AI4I 2020 dataset is synthetic. The results should not be interpreted as evidence of real-world industrial performance, causal relationships, or a deployable failure-prediction system. Further validation on appropriate real-world data would be required before practical deployment.
 
-Further research is required to evaluate generalization to real industrial data and determine whether the identified patterns can support operational maintenance decisions.
+## Licensing and Attribution
 
-## Licensing
+The research report is intended to be shared under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** licence, subject to the notice accompanying the PDF.
 
-The research report is intended to be shared under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) licence, subject to the notice in the published report.
+The dataset and any third-party materials remain subject to their respective licences. See the [data README](data/README.md) for dataset attribution and the [paper README](paper/README.md) for report licensing information.
 
-The dataset and other third-party materials remain subject to their respective licences. The notebook and other original code may require separate licensing terms.
+## Research Organisation
 
-## Author
-
-**Taylor Ng'andwe**  
-Vertex Electronics
-
-## Status
-
-The initial clustering analysis and research report are available. Further validation, publication of verified outputs, and extensions remain possible.
+This study forms part of the research and development activities of **Vertex Electronics**.
